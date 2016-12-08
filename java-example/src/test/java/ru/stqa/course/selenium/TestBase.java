@@ -6,7 +6,10 @@ import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.Set;
 
 /**
  * Created by Maria.Guseva on 25.11.2016.
@@ -39,5 +42,12 @@ public class TestBase {
     protected void logout() {
         driver.get("http://localhost/litecart/admin/logout.php");
         Assert.assertTrue(driver.getCurrentUrl().equals("http://localhost/litecart/admin/login.php"));
+    }
+
+    protected ExpectedCondition<String> anyWindowOtherThan(Set<String> oldWindows){
+        return input -> {Set<String> handles = input.getWindowHandles();
+            handles.removeAll(oldWindows);
+            return handles.size() > 0 ? handles.iterator().next() : null;
+        };
     }
 }
