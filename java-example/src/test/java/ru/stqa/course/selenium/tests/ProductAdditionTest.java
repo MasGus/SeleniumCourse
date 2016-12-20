@@ -1,4 +1,4 @@
-package ru.stqa.course.selenium;
+package ru.stqa.course.selenium.tests;
 
 import org.apache.commons.lang3.time.DateUtils;
 import org.junit.Assert;

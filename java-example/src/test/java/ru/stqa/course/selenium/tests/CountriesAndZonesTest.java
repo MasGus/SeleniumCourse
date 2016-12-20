@@ -1,4 +1,4 @@
-package ru.stqa.course.selenium;
+package ru.stqa.course.selenium.tests;
 
 /**
  * Created by Maria.Guseva on 29.11.2016.
@@ -12,7 +12,6 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.TreeSet;
 
 public class CountriesAndZonesTest extends TestBase{
 

@@ -1,4 +1,4 @@
-package ru.stqa.course.selenium;
+package ru.stqa.course.selenium.tests;
 
 /**
  * Created by Maria.Guseva on 24.11.2016.

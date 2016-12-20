@@ -1,11 +1,9 @@
-package ru.stqa.course.selenium;
+package ru.stqa.course.selenium.tests;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.logging.LogEntry;
-import org.openqa.selenium.logging.LogType;
 
 import java.util.ArrayList;
 import java.util.List;
